@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      History
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item *ngFor="let data of formData">
+      <ion-label>Nama: {{ data.nama }}</ion-label>
+      <ion-note slot="end">NIK: {{ data.nik }}, Alamat: {{ data.alamat }}, Message: {{ data.message }}</ion-note>
+    </ion-item>
+  </ion-list>
+  <div id="map"></div>
+</ion-content>
